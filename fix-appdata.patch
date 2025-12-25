@@ -1,0 +1,38 @@
+From 3d902c08abf9707115f3d8a354efa26e76896b26 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Thu, 25 Dec 2025 23:46:17 +0300
+Subject: [PATCH] Fix appdata papercuts
+
+---
+ data/ml.mdwalters.Lemonade.appdata.xml.in | 1 +
+ data/ml.mdwalters.Lemonade.desktop.in     | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/data/ml.mdwalters.Lemonade.appdata.xml.in b/data/ml.mdwalters.Lemonade.appdata.xml.in
+index 75463c9..0a573ad 100644
+--- a/data/ml.mdwalters.Lemonade.appdata.xml.in
++++ b/data/ml.mdwalters.Lemonade.appdata.xml.in
+@@ -19,6 +19,7 @@
+     </description>
+     <url type="homepage">https://github.com/mdwalters/lemonade</url>
+     <url type="bugtracker">https://github.com/mdwalters/lemonade/issues</url>
++    <url type="vcs-browser">https://github.com/mdwalters/lemonade</url>
+     <screenshots>
+         <screenshot type="default">
+             <image type="source">https://i.ibb.co/0jf8RR4/image.png</image>
+diff --git a/data/ml.mdwalters.Lemonade.desktop.in b/data/ml.mdwalters.Lemonade.desktop.in
+index 41103d2..43f92e0 100644
+--- a/data/ml.mdwalters.Lemonade.desktop.in
++++ b/data/ml.mdwalters.Lemonade.desktop.in
+@@ -5,7 +5,7 @@ Exec=lemonade
+ Icon=ml.mdwalters.Lemonade
+ Terminal=false
+ Type=Application
+-Categories=GTK;
++Categories=GTK;Utility;Network;News;
+ StartupNotify=true
+ # Translators: Do NOT translate or transliterate this text (these are enum types)!
+ X-Purism-FormFactor=Workstation;Mobile;
+--
+libgit2 1.7.2
+
